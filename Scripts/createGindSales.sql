@@ -1,7 +1,7 @@
 /*
-=================================================================
+======================================================================
 Create Database and Schemas
-=================================================================
+======================================================================
 
 Script Purpose:
     This script creates a new database named 'GrindSales' after checking if it already exists.
@@ -13,6 +13,7 @@ WARNING:
     All data in the database will be permanently deleted. Proceed with caution
     and ensure you have proper backups before running this script.
 */
+
 --Use master
 USE master
 Go
@@ -44,4 +45,5 @@ CREATE SCHEMA silver
 GO
 --Bronze 
 CREATE SCHEMA bronze
+
 GO
