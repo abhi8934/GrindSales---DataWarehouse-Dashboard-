@@ -17,12 +17,13 @@ in the data flow diagrams diagrams after the general.
   - Removal of duplicates
   - Handling missing values
   - Standardizing date and numeric formats
-
+  - Data type corrections
+### EDR of the all_orders table
+![image](https://github.com/abhi8934/GrindSales---DataWarehouse-Dashboard-/blob/main/all_orders.png?raw=true)
 
 ### Gold Layer
-  - Data type corrections
   - Implements a dimensional model (Star Schema).
   - Fact tables store transactional metrics.
   - Dimension tables provide descriptive attributes.
-
-![image](https://github.com/abhi8934/GrindSales---DataWarehouse-Dashboard-/blob/main/all_orders.png?raw=true)
+### Star Schema
+![image](https://github.com/abhi8934/GrindSales---DataWarehouse-Dashboard-/blob/main/star_schema.drawio.png?raw=true)
