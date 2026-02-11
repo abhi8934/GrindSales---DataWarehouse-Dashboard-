@@ -1,4 +1,6 @@
-CREATE OR ALTER PROCEDURE bronze.load_bronze_GS AS
+CREATE OR ALTER PROCEDURE bronze.load_bronze_GS
+	@base_path NVARCHAR(300)
+AS
 BEGIN		
 	BEGIN TRY
 		DECLARE @start_time DATETIME, @end_time DATETIME , @start_bronze DATETIME , @end_bronze DATETIME 
@@ -12,7 +14,7 @@ BEGIN
 		TRUNCATE TABLE bronze.customers
 		PRINT 'INSERTING DATA IN TABLE bronze.customers'
 		BULK INSERT bronze.customers
-		FROM 'C:\GrindGS\sources\customers.csv'
+		FROM @base_path + 'customers.csv'
 		WITH (
 			FIRSTROW = 2,
 			FIELDTERMINATOR = ',',
@@ -30,7 +32,7 @@ BEGIN
 		TRUNCATE TABLE bronze.products
 		PRINT 'INSTERING DATA IN TABLE bronze.products'
 		BULK INSERT bronze.products
-		FROM 'C:\GrindGS\sources\products.csv'
+		FROM @base_path + 'products.csv'
 		WITH (
 			FIRSTROW = 2,
 			FIELDTERMINATOR = ',',
@@ -47,7 +49,7 @@ BEGIN
 		PRINT 'TRUNCATING TABLE orders_2023'
 		TRUNCATE TABLE bronze.orders_2023 
 		BULK INSERT bronze.orders_2023
-		FROM 'C:\GrindGS\sources\Orders_2023.csv'
+		FROM @base_path +'Orders_2023.csv'
 		WITH (
 			FIRSTROW = 2,
 			FIELDTERMINATOR = ',',
@@ -62,7 +64,7 @@ BEGIN
 		PRINT 'TRUNCATING TABLE orders_2024'
 		TRUNCATE TABLE bronze.orders_2024 
 		BULK INSERT bronze.orders_2024
-		FROM 'C:\GrindGS\sources\Orders_2024.csv'
+		FROM @base_path + 'Orders_2024.csv'
 		WITH (
 			FIRSTROW = 2,
 			FIELDTERMINATOR = ',',
@@ -76,7 +78,7 @@ BEGIN
 		PRINT 'TRUNCATING TABLE orders_2025'
 		TRUNCATE TABLE bronze.orders_2025 
 		BULK INSERT bronze.orders_2025
-		FROM 'C:\GrindGS\sources\Orders_2025.csv'
+		FROM @base_path + 'Orders_2025.csv'
 		WITH (
 			FIRSTROW = 2,
 			FIELDTERMINATOR = ',',
