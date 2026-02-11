@@ -17,10 +17,12 @@ in the data flow diagrams diagrams after the general.
   - Removal of duplicates
   - Handling missing values
   - Standardizing date and numeric formats
-  - Data type corrections
+
 
 ### Gold Layer
+  - Data type corrections
   - Implements a dimensional model (Star Schema).
   - Fact tables store transactional metrics.
   - Dimension tables provide descriptive attributes.
+
 ![image](https://github.com/abhi8934/GrindSales---DataWarehouse-Dashboard-/blob/main/all_orders.png?raw=true)
