@@ -37,4 +37,4 @@ in the data flow diagrams diagrams after the general.
   - Run [ddl_silver_GS.sql](https://github.com/abhi8934/GrindSales---DataWarehouse-Dashboard-/blob/main/Scripts/proc_load_bronze_GS.sql), to create the tables in the silver layer.
   - Download and execute [proc_load_silver_GS](https://github.com/abhi8934/GrindSales---DataWarehouse-Dashboard-/blob/main/Scripts/proc_load_silver_GS.sql).
   - Run *EXEC proc_load_silver_GS* to feed, cleansed data into the silver layer.
-  - Run ddl_gold script to create business ready views.
+  - Run [ddl_gold script](https://github.com/abhi8934/GrindSales---DataWarehouse-Dashboard-/blob/main/Scripts/ddl_gold_gs.sql) to create business ready views.
