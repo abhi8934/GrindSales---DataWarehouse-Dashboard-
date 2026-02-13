@@ -27,3 +27,14 @@ in the data flow diagrams diagrams after the general.
   - Dimension tables provide descriptive attributes.
 ### Star Schema
 ![image](https://github.com/abhi8934/GrindSales---DataWarehouse-Dashboard-/blob/main/star_schema.drawio.png?raw=true)
+
+### How to run?
+  - Download the source files and save them in the given path *"C:\GrindGS\sources"*.
+  - Run [createGrindSales.sql](https://github.com/abhi8934/GrindSales---DataWarehouse-Dashboard-/blob/main/Scripts/createGrindSales.sql) script, to create the schemas and database grind sales.
+  - Run [ddl_bronze_GS.sql](https://github.com/abhi8934/GrindSales---DataWarehouse-Dashboard-/blob/main/Scripts/ddl_bronze_GS.sql), to create the tables in the bronze layer.
+  - Download and execute [proc_load_bronze_GS](https://github.com/abhi8934/GrindSales---DataWarehouse-Dashboard-/blob/main/Scripts/proc_load_bronze_GS.sql).
+  - Run *EXEC proc_load_bronze_GS* to feed data into the bronze layer.
+  - Run [ddl_silver_GS.sql](https://github.com/abhi8934/GrindSales---DataWarehouse-Dashboard-/blob/main/Scripts/proc_load_bronze_GS.sql), to create the tables in the silver layer.
+  - Download and execute [proc_load_silver_GS](https://github.com/abhi8934/GrindSales---DataWarehouse-Dashboard-/blob/main/Scripts/proc_load_silver_GS.sql).
+  - Run *EXEC proc_load_silver_GS* to feed, cleansed data into the silver layer.
+  - Run ddl_gold script to create business ready views.
