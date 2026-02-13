@@ -28,7 +28,7 @@ in the data flow diagrams diagrams after the general.
 ### Star Schema
 ![image](https://github.com/abhi8934/GrindSales---DataWarehouse-Dashboard-/blob/main/star_schema.drawio.png?raw=true)
 
-### How to run?
+## How to run?
   - Download the source files and save them in the given path *"C:\GrindGS\sources"*.
   - Run [createGrindSales.sql](https://github.com/abhi8934/GrindSales---DataWarehouse-Dashboard-/blob/main/Scripts/createGrindSales.sql) script, to create the schemas and database grind sales.
   - Run [ddl_bronze_GS.sql](https://github.com/abhi8934/GrindSales---DataWarehouse-Dashboard-/blob/main/Scripts/ddl_bronze_GS.sql), to create the tables in the bronze layer.
@@ -38,3 +38,8 @@ in the data flow diagrams diagrams after the general.
   - Download and execute [proc_load_silver_GS](https://github.com/abhi8934/GrindSales---DataWarehouse-Dashboard-/blob/main/Scripts/proc_load_silver_GS.sql).
   - Run *EXEC proc_load_silver_GS* to feed, cleansed data into the silver layer.
   - Run [ddl_gold script](https://github.com/abhi8934/GrindSales---DataWarehouse-Dashboard-/blob/main/Scripts/ddl_gold_gs.sql) to create business ready views.
+## Dashboard:-
+### **Page-1 Showing all the KPIs**
+![image](https://github.com/abhi8934/GrindSales---DataWarehouse-Dashboard-/blob/main/dashboard_pg_1.png)
+### **Page-2 Showing tables**
+![image](https://github.com/abhi8934/GrindSales---DataWarehouse-Dashboard-/blob/main/dashboard_pg_2.png)
